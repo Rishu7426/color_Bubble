@@ -17,7 +17,7 @@ function color() {
 //Start color change function
 function startColor() {
     if (!interval) {
-        interval = setInterval(color, 50);
+        interval = setInterval(color, 500);
         start.disabled = true;//disabling start button after one click
     }
 }
