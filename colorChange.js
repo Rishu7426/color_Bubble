@@ -23,9 +23,9 @@ function color() {
 function startColor() {
     if (!interval) {
         if(i==boxes.length){
-            resetColor();
+            resetColor()
         }
-        interval = setInterval(color, 100);
+        interval = setInterval(color, 50);
         start.disabled = true;//disabling start button after one click
     }
 }
