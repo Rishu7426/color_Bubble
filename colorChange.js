@@ -23,7 +23,7 @@ function color() {
 function startColor() {
     if (!interval) {
         resetColor();
-        interval = setInterval(color, 100);
+        interval = setInterval(color, 500);
         start.disabled = true;//disabling start button after one click
     }
 }
@@ -78,7 +78,6 @@ function randomRgbString() {
     let b = Math.floor(Math.random() * 255)
     return `rgb(${r},${g},${b})`
 }
-
 
 
 
