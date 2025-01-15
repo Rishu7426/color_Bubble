@@ -11,12 +11,18 @@ function color() {
         boxes[i].style.background = gradient();
         boxes[i].style.boxShadow = shadow();
         i++;
+        if(i==boxes.length){
+            start.disabled = false;
+        clearInterval(interval);
+        interval = null;
+        }
         break;
     }
 }
 //Start color change function
 function startColor() {
     if (!interval) {
+        resetColor();
         interval = setInterval(color, 500);
         start.disabled = true;//disabling start button after one click
     }
