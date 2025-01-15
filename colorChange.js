@@ -13,7 +13,6 @@ function color() {
         i++;
         if(i==boxes.length){
             start.disabled = false;
-             resetColor();
         clearInterval(interval);
         interval = null;
         }
@@ -23,6 +22,9 @@ function color() {
 //Start color change function
 function startColor() {
     if (!interval) {
+        if(i==boxes.length){
+            resetColor();
+        }
         interval = setInterval(color, 100);
         start.disabled = true;//disabling start button after one click
     }
