@@ -23,7 +23,7 @@ function color() {
 function startColor() {
     if (!interval) {
         resetColor();
-        interval = setInterval(color, 500);
+        interval = setInterval(color, 100);
         start.disabled = true;//disabling start button after one click
     }
 }
